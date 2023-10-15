@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input{
+      
+
+      margin: 20px;
+      height: 20px;
+      
+      padding: 20px;
+      border-radius: 60px;
+      background: linear-gradient(135deg, #efefef,rgb(235, 219, 111));
+      width:20%;
+      border: none;
+    }
+    .btn{
+      width: 10%;
+      padding: 15px;
+      border-radius: 30px;
+      color: white;
+      background: rgb(25, 80, 1);
+      border: none;
+
+    }
+    .msg{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      
+    }
+    .msg1{
+      color: pink;
+      font-style: oblique;
+      font-size: 30px;
+      transition: all ease-in-out 0.5s;
+      margin-right: 10px;
+     
+
+    }
+    .msg1:hover{
+    transform: scale(1.5);
+    padding: 20px;
+    }
+    .msg img{
+        width: 30px;
+       
+      
+    }
+   .head{
+      background:linear-gradient(135deg, #153677 , #4e085f);
+      height: 50px;
+      padding: 10px;
+      border-radius: 25px;
+    }
+    marquee{
+      margin: 0;
+      padding-top: -50px;
+    }
+
+   
+  </style>
+</head>
+<body style="background-color: #212121; color: white;">
+
+  <div class="head">
+    <marquee scrollamount="15"><h1>Github Details</h1></marquee>
+  </div>
+  
+ <div class="card">
+  <input type="text" placeholder="Enter Github name" title="id" >
+  <button class="btn">GET</button>
+ </div>
+  <div class="msg">
+    <h2 class="msg1"></h2>
+    <img   src="#" alt>
+  </div>
+
+  <ul class="list" type="none">
+    <li><img alt></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+
+<script src="Promises.js"></script>
+  <!-- <script>
+    const xhr=new XMLHttpRequest();
+    const url='https://api.github.com/users/RajaCS5x';
+
+    xhr.open('GET',url);
+    console.log(xhr.readyState);
+   xhr.onreadystatechange= function(){
+      console.log(this.responseText);
+   }
+    xhr.send(); -->
+
+  </script>
+</body>
+</html>
